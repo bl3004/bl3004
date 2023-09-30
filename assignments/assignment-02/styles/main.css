@@ -2,3 +2,9 @@ h1 {
     color: rgb(240, 108, 108);
     }
 
+    /* styles.css */
+
+body {
+    /* Linear Gradient Background */
+    background: linear-gradient(to bottom, #3b74be, #ffdabd)
+}
