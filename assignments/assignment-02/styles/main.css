@@ -8,3 +8,13 @@ body {
     /* Linear Gradient Background */
     background: linear-gradient(to bottom, #3b74be, #ffdabd)
 }
+
+h3 {
+    color: rgb(255, 255, 255);
+ }
+
+
+ a {
+    text-decoration: none;
+  }
+  
