@@ -2,6 +2,8 @@
 
 h1 {
   color: rgb(240, 108, 108);
+  text-align: center; /* Added text-align to center the heading */
+  font-family: sans-serif; /* Corrected syntax for font-family */
 }
 
 body {
@@ -10,15 +12,9 @@ body {
 }
 
 h3 {
-  text-align:center;
+  text-align: center;
   color: rgb(255, 255, 255);
 }
-
-h1{ 
- text-align: center;
-  style="font-family: sans-serif"
-}
-
 
 a {
   text-decoration: none;
@@ -26,13 +22,11 @@ a {
 
 span {
   text-decoration: none;
-  color: rgb(237, 168, 168); 
-  /*为什么字体颜色不变？*/
+  color: rgb(237, 168, 168);
   padding: 3px;
-  word-wrap: break-word; 
-  border: 1px solid rgb(237, 168, 168); 
+  word-wrap: break-word;
+  border: 1px solid rgb(237, 168, 168);
 }
-
 
 .box {
   position: absolute;
@@ -45,14 +39,12 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white; 
+  color: white;
   font-style: italic;
-  text-size-adjust: 5;
+  font-size: 15px; /* Corrected syntax for font size */
 }
 
-
-.section{
+.section {
   padding: 10px;
   text-align: center;
 }
-
