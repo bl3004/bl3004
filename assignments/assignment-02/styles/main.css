@@ -18,3 +18,12 @@ h3 {
     text-decoration: none;
   }
   
+/* styles.css */
+
+/* Create a line box around a specific text element */
+.line-box {
+    border: 1px solid #ffffff; /* 1px solid black border */
+    padding: 8px; /* Add padding for space between text and border */
+    display: inline-block; /* Make the box inline with the text */
+  }
+  
