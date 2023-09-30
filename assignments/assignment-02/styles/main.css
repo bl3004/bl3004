@@ -1,29 +1,56 @@
-h1 {
-    color: rgb(240, 108, 108);
-    }
+/* styles.css */
 
-    /* styles.css */
+h1 {
+  color: rgb(240, 108, 108);
+}
 
 body {
-    /* Linear Gradient Background */
-    background: linear-gradient(to bottom, #3b74be, #ffdabd)
+  /* Linear Gradient Background */
+  background: linear-gradient(to bottom, #3b74be, #ffdabd);
 }
 
 h3 {
-    color: rgb(255, 255, 255);
- }
+  color: rgb(255, 255, 255);
+}
+
+h1{
+  style="font-family: sans-serif"
+}
 
 
- a {
-    text-decoration: none;
-  }
-  
-/* styles.css */
+a {
+  text-decoration: none;
+}
 
-/* Create a line box around a specific text element */
-.line-box {
-    border: 1px solid #ffffff; /* 1px solid black border */
-    padding: 8px; /* Add padding for space between text and border */
-    display: inline-block; /* Make the box inline with the text */
-  }
-  
+span {
+  text-decoration: none;
+  color: #f27c7c; 
+  /*为什么字体颜色不变？*/
+  padding: 3px;
+  word-wrap: break-word; 
+  border: 1px solid #d9d9d9; 
+}
+
+
+.box {
+  position: absolute;
+  top: 5px;
+  right: 150px;
+  padding: 3px;
+  background: rgb(247, 128, 98);
+  width: 130px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; 
+  font-style: italic;
+  text-size-adjust: 5;
+}
+
+
+.section{
+  padding: 10px;
+  text-align: center;
+}
+
