@@ -10,10 +10,12 @@ body {
 }
 
 h3 {
+  text-align:center;
   color: rgb(255, 255, 255);
 }
 
-h1{
+h1{ 
+ text-align: center;
   style="font-family: sans-serif"
 }
 
