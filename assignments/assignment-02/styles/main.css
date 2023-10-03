@@ -16,11 +16,17 @@ h3 {
   color: rgb(255, 255, 255);
 }
 
+h3:hover {
+  text-align: center;
+  color: rgb(246, 175, 175);
+}
+
+
 a {
   text-decoration: none;
 }
 
-span {
+.frame {
   text-decoration: none;
   color: rgb(237, 168, 168);
   padding: 3px;
@@ -29,22 +35,30 @@ span {
 }
 
 .box {
-  position: absolute;
+  position: fixed;
   top: 5px;
-  right: 150px;
-  padding: 3px;
+  right: 15px;
+  padding: 2px;
   background: rgb(247, 128, 98);
-  width: 130px;
+  width: 120px;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   font-style: italic;
-  font-size: 15px; /* Corrected syntax for font size */
+  font-size: 15px; 
 }
 
 .section {
   padding: 10px;
   text-align: center;
 }
+
+.section_head {
+  font-style: italic; 
+  font-weight: bolder;
+  color: rgb(41, 71, 122);
+  font-size: 25px;
+}
+
