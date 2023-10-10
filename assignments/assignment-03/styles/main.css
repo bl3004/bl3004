@@ -1,4 +1,15 @@
 /* styles.css */
+body {
+  text-align:justify;justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width:1000px;
+  margin:auto;
+  
+}
+
 
 h1 {
   color: rgb(240, 108, 108);
@@ -51,8 +62,12 @@ a {
 }
 
 .section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
-  text-align: center;
+  text-align:justify;
 }
 
 .section_head {
@@ -60,6 +75,7 @@ a {
   font-weight: bolder;
   color: rgb(41, 71, 122);
   font-size: 25px;
+  text-align: center;
 }
 
 .centered-image {
@@ -72,3 +88,4 @@ a {
   justify-content: center;
   align-items:center;
 }
+
