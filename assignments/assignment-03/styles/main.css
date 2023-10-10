@@ -31,12 +31,16 @@ body {
 
 .container {
   position: relative;
+  text-align: center;
 }
 
 .title-overlay {
   position:absolute;
   top: 80px; /* Adjust the top position as needed */
   z-index: 20; /* Ensure the title appears above the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 h1 {
