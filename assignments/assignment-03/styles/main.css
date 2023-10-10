@@ -126,3 +126,20 @@ a {
   align-items:center;
 }
 
+.neon{
+  font-size: 30px; 
+  text-align:left;
+  color: white;
+  top: 35px; 
+  position: absolute; 
+  left: 600px;
+}
+
+.neon-right {
+  font-size: 30px;
+  text-align: right; /* 可以保留或删除这行，取决于您想要文本如何对齐 */
+  color: white;
+  position: absolute; /* 如果相对于视口右对齐，使用 absolute 定位 */
+  top: 35px;
+  right: 600px; /* 将元素的右边缘与包含块（这里是视口）的右边缘对齐 */
+}
