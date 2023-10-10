@@ -83,7 +83,7 @@ a {
 
 .box {
   position: fixed;
-  top: 5px;
+  top: 300px;
   right: 15px;
   padding: 2px;
   background: rgb(247, 128, 98);
