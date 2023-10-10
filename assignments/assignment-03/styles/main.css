@@ -1,0 +1,64 @@
+/* styles.css */
+
+h1 {
+  color: rgb(240, 108, 108);
+  text-align: center; /* Added text-align to center the heading */
+  font-family: sans-serif; /* Corrected syntax for font-family */
+}
+
+body {
+  /* Linear Gradient Background */
+  background: linear-gradient(to bottom, #3b74be, #ffdabd);
+}
+
+h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+h3:hover {
+  text-align: center;
+  color: rgb(246, 175, 175);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.frame {
+  text-decoration: none;
+  color: rgb(237, 168, 168);
+  padding: 3px;
+  word-wrap: break-word;
+  border: 1px solid rgb(237, 168, 168);
+}
+
+.box {
+  position: fixed;
+  top: 5px;
+  right: 15px;
+  padding: 2px;
+  background: rgb(247, 128, 98);
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-style: italic;
+  font-size: 15px; 
+}
+
+.section {
+  padding: 10px;
+  text-align: center;
+}
+
+.section_head {
+  font-style: italic; 
+  font-weight: bolder;
+  color: rgb(41, 71, 122);
+  font-size: 25px;
+}
+
