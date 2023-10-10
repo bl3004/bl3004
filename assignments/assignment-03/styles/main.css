@@ -14,7 +14,8 @@ body {
 h1 {
   color: rgb(240, 108, 108);
   text-align: center; /* Added text-align to center the heading */
-  font-family: sans-serif; /* Corrected syntax for font-family */
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 80px;
 }
 
 body {
