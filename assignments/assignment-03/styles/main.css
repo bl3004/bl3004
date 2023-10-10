@@ -36,7 +36,7 @@ body {
 
 .title-overlay {
   position:absolute;
-  top: 180px; /* Adjust the top position as needed */
+  top: 300px; /* Adjust the top position as needed */
   z-index: 20; /* Ensure the title appears above the image */
   left: 50%;
   transform: translate(-50%, -50%);
