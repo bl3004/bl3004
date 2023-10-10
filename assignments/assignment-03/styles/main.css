@@ -25,6 +25,17 @@ body {
   }
 }
 
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.title-overlay {
+  position:absolute;
+  top: 80px; /* Adjust the top position as needed */
+  left: 50%;
+  z-index: 20; /* Ensure the title appears above the image */
+}
 
 h1 {
   color: rgb(240, 108, 108);
@@ -32,6 +43,7 @@ h1 {
   font-family: 'Luckiest Guy', cursive;
   font-size: 80px;
   animation:shine 2s infinite;
+  width:700px;
 }
 
 body {
@@ -55,6 +67,7 @@ a {
 }
 
 .frame {
+  text-align: center;
   text-decoration: none;
   color: rgb(237, 168, 168);
   padding: 3px;
