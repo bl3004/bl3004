@@ -62,3 +62,13 @@ a {
   font-size: 25px;
 }
 
+.centered-image {
+  width: 100%;
+  height: auto;
+  max-width: 3000px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
