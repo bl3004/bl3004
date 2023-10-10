@@ -1,13 +1,17 @@
 /* styles.css */
 body {
-  text-align:justify;justify-content: center;
-  align-items: center;
   height: auto;
   margin: 0;
   padding: 0;
   width:1000px;
   margin:auto;
-  
+}
+
+.body-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
 }
 
 @keyframes shine {
@@ -27,23 +31,20 @@ body {
 
 .container {
   position: relative;
-  text-align: center;
 }
 
 .title-overlay {
   position:absolute;
   top: 80px; /* Adjust the top position as needed */
-  left: 50%;
   z-index: 20; /* Ensure the title appears above the image */
 }
 
 h1 {
   color: rgb(240, 108, 108);
-  text-align: center; /* Added text-align to center the heading */
   font-family: 'Luckiest Guy', cursive;
   font-size: 80px;
   animation:shine 2s infinite;
-  width:700px;
+  width: 900px;;
 }
 
 body {
@@ -52,7 +53,6 @@ body {
 }
 
 h3 {
-  text-align: center;
   color: rgb(255, 255, 255);
 }
 
