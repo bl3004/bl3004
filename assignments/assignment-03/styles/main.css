@@ -124,14 +124,14 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  top:200px;
+  top:500px;
 }
 
 .neon{
   font-size: 30px; 
   text-align:left;
   color: white;
-  top: 35px; 
+  top: 5px; 
   position: absolute; 
   left: 600px;
 }
