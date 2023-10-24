@@ -90,10 +90,10 @@ header {
 
 .header-animation-wrap{
     display: none;    
-    aspect-ratio: 300/530; 
     position:relative;
     align-self: start;
     max-height: 90vh;
+    aspect-ratio: 1116/750;
 }
 /* 以上是header */
 
@@ -115,6 +115,15 @@ main {
     margin-right: auto;
     margin-left: auto;
     margin-top: auto; margin-bottom: auto;
+}
+
+.image-text-block{
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 77.8125rem;    padding-top: 10rem;
+    padding-bottom: 10rem;
+    position: relative;
+    margin: 0 auto;
 }
 
 
