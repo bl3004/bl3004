@@ -1,0 +1,70 @@
+font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+
+.header-homepage {
+    min-height: 100vh;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-logo-wrap {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+}
+
+.header-logo-link
+{
+    clip-path: polygon(0 0,100% 0,100% 19%,48% 19%,48% 100%,0 100%);
+}
+
+.header-MIT-logo {
+    height: 492px;
+}
+
+.header-navbar {
+    width: 100%;
+    overflow-y: initial;
+    grid-column: 1/-1;
+    pointer-events: auto;
+}
+
+.header-nav-inner {
+    max-height: none;
+    overflow-y: initial;
+}
+.navi-nodelist {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0;
+}
+
+.title {
+    display: block;
+    text-decoration: none;
+}
+
+.navi-title {
+    font-family: Haas Grot Disp Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.1666666667;
+    letter-spacing: var(--letter-spacing-display-text,.01em);
+    word-spacing: 0.1em;
+    text-decoration: none;
+    background-image: linear-gradient(0deg,transparent,var(--color-underline) 0,var(--color-underline) 0.0416666667em,transparent 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .5s ease-in-out;
+    display: inline-block;
+    font-weight: 700;
+    transition: background-size .5s ease-in-out,color .15s ease-in-out;
+
+}
