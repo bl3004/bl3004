@@ -129,7 +129,7 @@ a {
   top: 300px;
   right: 15px;
   padding: 2px;
-  background: rgb(247, 128, 98);
+  background: rgb(247, 128, 98, 0.5);
   width: 120px;
   height: 30px;
   display: flex;
