@@ -158,6 +158,7 @@ margin-top: 20%;
 
 /* 以下是footer */
 
+/* 以下是footer的header */
 .footer{
     font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
@@ -180,4 +181,19 @@ margin-top: 20%;
 .footer-logo{
     width: 5.3125rem;
     height: 2.5rem;
+}
+
+
+/* 以下是footer的下部 */
+.footer-bottom-center{
+
+}
+
+
+.footer-bottom-inner{
+
+}
+
+.footer-address{
+
 }
