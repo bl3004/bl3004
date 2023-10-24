@@ -186,6 +186,11 @@ margin-top: 20%;
 
 /* 以下是footer的下部 */
 .footer-bottom-center{
+    padding: 0 2.5rem;    box-sizing: content-box;
+    max-width: 85rem;
+    padding: 0 1rem;
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -199,6 +204,9 @@ margin-top: 20%;
 
 .footer-address{
     grid-column: 1/4;
+    grid-row: 2/3;
+    font-style: normal;
+    font-weight: bold;
 }
 
 
