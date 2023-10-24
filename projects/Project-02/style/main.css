@@ -1,5 +1,8 @@
 font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 
+header {
+    display: block;
+}
 .header-homepage {
     min-height: 100vh;
 }
@@ -53,7 +56,7 @@ font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 }
 
 .navi-title {
-    font-family: Haas Grot Disp Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-size: 1.5rem;
     line-height: 1.1666666667;
     letter-spacing: var(--letter-spacing-display-text,.01em);
@@ -67,4 +70,114 @@ font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
     font-weight: 700;
     transition: background-size .5s ease-in-out,color .15s ease-in-out;
 
+}
+
+.header-animation {
+ position: relative;
+    align-self: start;
+}
+
+/* 以上是header */
+
+
+
+
+
+/* 以下是main */
+
+main {
+    display:block
+}
+
+/* 以下是main里面粉红色板块 */
+.center{
+    box-sizing: content-box;
+    max-width: 85rem;
+    padding: 0 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto; margin-bottom: auto;
+}
+
+
+/* 以下是粉红字体 */
+
+
+.pink-text-block{
+    padding-bottom: 20rem;    left: -3.75rem;    position: relative;
+    z-index: 10;
+    max-width: 27rem;
+}
+
+
+.pink-text-subtitle{
+    font-family:'Neue Haas Grotesk Display Pro', sans-serif;
+    font-size: .84375rem;
+    line-height: 1.1851851852;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 700;
+
+}
+
+.pink-text-title{
+    font-family:'Neue Haas Grotesk Display Pro', sans-serif;
+    opacity: 1;
+    transform: translateX(0);    transition-delay: .2s;margin-top: 0.25rem;
+    font-size: clamp(2rem,4vw,3rem);
+    line-height: 1;
+}
+
+.pink-text-description {
+font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+
+/* 以下是粉红图片 */
+.block-pink{
+
+    background-color: #ff40b6;
+  
+}
+
+.pink-triangle-block{
+    left: 6rem;
+    margin-top: auto;
+        aspect-ratio: 2/1.7320508076;
+   
+}
+
+.pink-image {
+
+margin-top: 20%;
+    max-width: 50.8125rem;
+    max-height: 44rem;
+    clip-path: polygon(50% 0,0 100%,100% 100%);
+}
+
+
+/* 以下是footer */
+
+.footer{
+    font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+.footer-header{
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: #000;
+}
+
+.footer-center{
+    padding: 0 2.5rem;
+    box-sizing: content-box;
+    max-width: 85rem;
+    padding: 0 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-logo{
+    width: 5.3125rem;
+    height: 2.5rem;
 }
