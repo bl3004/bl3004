@@ -191,9 +191,26 @@ margin-top: 20%;
 
 
 .footer-bottom-inner{
-
+    padding-top: 0;    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-column-gap: 1rem;    grid-row-gap: 2.5rem;
+    row-gap: 2.5rem;
 }
 
 .footer-address{
+    grid-column: 1/4;
+}
 
+
+
+/* footer中间 */
+
+.footer-bottom-mid{
+    grid-column: 4/9;grid-row: 2/3;
+}
+
+
+.footer-touch{
+    margin-top: -2px;    display: flex;
+    align-items: center;
 }
