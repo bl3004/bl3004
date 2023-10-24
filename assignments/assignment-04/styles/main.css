@@ -1,0 +1,171 @@
+/* styles.css */
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  width:1000px;
+  margin:auto;
+}
+
+section {
+  display: block;
+ 
+  text-align: center; /* 设置文本内容水平居中 */
+  position: relative; /* 用于垂直居中 */
+ 
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 100px 100px;
+  color: rgb(255, 178, 178);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 50px 50px;
+  align-items: center;
+  justify-items: center;
+}
+
+.item{
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  font-size: 10px;
+}
+
+
+
+
+.body-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+@keyframes shine {
+  0% {
+      color:  rgb(240, 108, 108);
+      text-shadow: none;
+  }
+  50% {
+      color: rgb(255, 255, 255);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+      color:  rgb(240, 108, 108);
+      text-shadow: none;
+  }
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.title-overlay {
+  position:absolute;
+  top: 200px; /* Adjust the top position as needed */
+  z-index: 20; /* Ensure the title appears above the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  color: rgb(240, 108, 108);
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 60px;
+  animation:shine 2s infinite;
+  width: 900px;
+}
+
+body {
+  /* Linear Gradient Background */
+  background: linear-gradient(to bottom, #3b74be, #ffdabd);
+}
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+h3:hover {
+  text-align: center;
+  color: rgb(246, 175, 175);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.frame {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(237, 168, 168);
+  padding: 3px;
+  word-wrap: break-word;
+  border: 1px solid rgb(237, 168, 168);
+  font-size: 15px;
+}
+
+.box {
+  position: fixed;
+  top: 300px;
+  right: 15px;
+  padding: 2px;
+  background: rgb(247, 128, 98);
+  width: 120px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-style: italic;
+  font-size: 15px; 
+}
+
+.section {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align:justify;
+}
+
+.section_head {
+  font-style: italic; 
+  font-weight: bolder;
+  color: rgb(41, 71, 122);
+  font-size: 25px;
+  text-align: center;
+}
+
+.centered-image {
+  width: 100%;
+  height: auto;
+  max-width: 3000px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  top:500px;
+}
+
+.neon{
+  font-size: 15px; 
+  text-align:left;
+  color: white;
+  position: absolute; 
+  left: 100px;
+}
+
+.neon-right {
+  font-size: 15px;
+  text-align: right; /* 可以保留或删除这行，取决于您想要文本如何对齐 */
+  color: white;
+  position: absolute; /* 如果相对于视口右对齐，使用 absolute 定位 */
+  right: 100px; /* 将元素的右边缘与包含块（这里是视口）的右边缘对齐 */
+}
