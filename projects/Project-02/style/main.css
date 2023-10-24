@@ -76,6 +76,8 @@ header {
 
 /* 以下是header里面图片 */
 .header-animation {
+    --left-margin: -13.9375rem;
+    --top-margin: 0.1875rem;
  position:relative;
  align-self: start;
     display: flex;
@@ -84,16 +86,17 @@ header {
     width: calc(100% + var(--left-margin)*-1);
     margin-top: var(--top-margin);
     margin-left: var(--left-margin);
-    --left-margin: -13.9375rem;
-    --top-margin: 0.1875rem;
+    
 }
 
 .header-animation-wrap{
     display: none;    
-    position:relative;
+    aspect-ratio: 300/530;
+    position: relative;
     align-self: start;
     max-height: 90vh;
-    aspect-ratio: 1116/750;
+    --color-background: #000;
+background-color: #000;
 }
 /* 以上是header */
 
