@@ -90,13 +90,11 @@ header {
 }
 
 .header-animation-wrap{
-    display: none;    
+ 
     aspect-ratio: 300/530;
     position: relative;
     align-self: start;
     max-height: 90vh;
-    --color-background: #000;
-background-color: #000;
 }
 /* 以上是header */
 
