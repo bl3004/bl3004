@@ -99,7 +99,7 @@ h1 {
 
 
 /* tablet layout */
-@media only screen and (min-width : 600px) 
+@media only screen and (min-width : 0px) 
 {
     body{
           /* Linear Gradient Background */
@@ -161,8 +161,8 @@ a {
 
 
 .card-wrapper {
-    width: 1200px;
-    height: 800px;
+    width: 1000px;
+    height: 750px;
     box-shadow: 12px 12PX 12PX 12px rgba(0,0,0,0.5);
   
    
