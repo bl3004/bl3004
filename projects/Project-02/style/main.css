@@ -244,7 +244,7 @@ main {
 .center{
     box-sizing: content-box;
     max-width: 85rem;
-    padding: 0 1rem;
+    padding: 0 6rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: auto; margin-bottom: auto;
@@ -327,6 +327,8 @@ margin-top: 20%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     background-color: #000;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .footer-center{
@@ -348,7 +350,7 @@ margin-top: 20%;
 .footer-bottom-center{
     padding: 0 2.5rem;    box-sizing: content-box;
     max-width: 85rem;
-    padding: 0 1rem;
+    padding: 6rem;
     margin-right: auto;
     margin-left: auto;
 
