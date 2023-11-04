@@ -75,13 +75,39 @@ header {
 
 /* 以下是header右边右上小link */
 
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+
+
+.Navigation_TopRight{
+    display:inline-flex;
+    flex-direction:row;
+    margin-right: 0;
+    grid-row: 1;
+    grid-column: 1/2;
+    align-self: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .Navigation_TopRight_Small{
     pointer-events: auto;
     list-style: none; /* 去掉列表样式 */
 }
 
 
-.Navigation_TopRight_SmallLinnk{
+.Navigation_TopRight_SmallLink{
     text-decoration: none;
     background-image: linear-gradient(0deg,transparent,var(--color-underline) 0,var(--color-underline) 0.0416666667em,transparent 0);
     background-repeat: no-repeat;
@@ -94,6 +120,23 @@ header {
     font-weight: 700;
     color: #000;
 }
+
+
+.Navigation_TopRight_SmallLink_Hidden{
+
+
+position: absolute;
+width: 1px;
+height: auto;
+padding: 0;
+margin: 0;
+overflow: hidden;
+clip: rect(0 0 0 0);
+white-space: nowrap;
+border: 0;
+}
+
+
 
 
 .Navigation_TopRight_SmallLinnk_Icon{
