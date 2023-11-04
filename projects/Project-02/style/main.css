@@ -327,8 +327,8 @@ margin-top: 20%;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
     background-color: #000;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 .footer-center{
@@ -350,7 +350,7 @@ margin-top: 20%;
 .footer-bottom-center{
     padding: 0 2.5rem;    box-sizing: content-box;
     max-width: 85rem;
-    padding: 6rem;
+    padding: 3rem;
     margin-right: auto;
     margin-left: auto;
 
