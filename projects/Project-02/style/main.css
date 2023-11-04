@@ -48,7 +48,7 @@ header {
     justify-content: space-between;
     width: auto;
     padding-top: 0.75rem;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
 }
 
 .title {
@@ -92,18 +92,22 @@ ul{
     display:inline-flex;
     flex-direction:row;
     margin-right: 0;
+    padding: 1;
+    margin: 1;
+    flex-direction: row;
     grid-row: 1;
     grid-column: 1/2;
     align-self: center;
     justify-content: flex-end;
-    padding: 0;
-    margin: 0;
     list-style: none;
+    display: flex;
+    margin-right: 0;
 }
 
 .Navigation_TopRight_Small{
     pointer-events: auto;
     list-style: none; /* 去掉列表样式 */
+    margin-left: 2.5rem;
 }
 
 
