@@ -1,5 +1,17 @@
 font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
 
+
+body{
+    width: auto;
+    overflow-x: hidden;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+
 header {
     display: block;
 }
@@ -11,7 +23,7 @@ header {
 .header-inner {
     display: flex;
     justify-content: space-between;  
-    width: 100%;
+    width: auto;
     right: auto;
     padding: 3em;
 }
