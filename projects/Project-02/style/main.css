@@ -193,7 +193,7 @@ border: 0;
     width: calc(100% + var(--left-margin)*-1);
     margin-top: var(--top-margin);
     margin-left: var(--left-margin);
-    --left-margin: -2.125rem;
+    --left-margin: -8rem;
 }
 
 .header-animation-wrap{
@@ -205,6 +205,11 @@ border: 0;
     --left-margin: -13.9375rem;
     --top-margin: 0.1875rem;
 }
+
+
+/* 以上是header里面图片 */
+
+
 /* 以上是header */
 
 
