@@ -73,6 +73,34 @@ header {
 
 }
 
+/* 以下是header右边右上小link */
+
+.Navigation_TopRight_Small{
+    pointer-events: auto;
+    list-style: none; /* 去掉列表样式 */
+}
+
+
+.Navigation_TopRight_SmallLinnk{
+    text-decoration: none;
+    background-image: linear-gradient(0deg,transparent,var(--color-underline) 0,var(--color-underline) 0.0416666667em,transparent 0);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    transition: background-size .5s ease-in-out;
+    font-family: Haas Grot Text Web,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+    display: flex;
+    font-weight: 700;
+    color: #000;
+}
+
+
+.Navigation_TopRight_SmallLinnk_Icon{
+    margin-left: 0.25rem;
+}
+
+/* 以上是header右边右上小link */
 
 
 /* 以下是header里面图片 */
@@ -278,12 +306,13 @@ margin-top: 20%;
     grid-row: 2/3;
     grid-column: 10/-1;
     margin-top: 0;
+    
 }
 
 .footer-right-item{
     padding: 0;
     margin: 0;
-    
+    list-style: none; /* 去掉列表样式 */
 }
 
 .item-link{
