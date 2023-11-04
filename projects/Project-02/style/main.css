@@ -208,7 +208,7 @@ border: 0;
     width: calc(100% + var(--left-margin)*-1);
     margin-top: var(--top-margin);
     margin-left: var(--left-margin);
-    --left-margin: -8rem;
+    --left-margin: -13rem;
 }
 
 .header-animation-wrap{
