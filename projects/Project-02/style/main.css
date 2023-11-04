@@ -36,6 +36,14 @@ header {
     height: 492px;
 }
 
+
+img{
+    overflow-clip-margin: content-box;
+    overflow:clip;
+}
+
+
+
 .header-navbar {
     width: 100%;
     overflow-y: initial;
@@ -53,7 +61,7 @@ header {
 
 
 
-@media (min-width: 80em){
+
 .navi-nodelist{
     position: relative;
     top: 0;
@@ -63,7 +71,6 @@ header {
     width: auto;
     padding-top: 0.75rem;
     padding-bottom: 1rem;
-}
 }
 
 
@@ -186,7 +193,7 @@ border: 0;
     width: calc(100% + var(--left-margin)*-1);
     margin-top: var(--top-margin);
     margin-left: var(--left-margin);
-    
+    --left-margin: -2.125rem;
 }
 
 .header-animation-wrap{
