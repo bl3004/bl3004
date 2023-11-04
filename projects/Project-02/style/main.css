@@ -17,6 +17,7 @@ header {
     display: flex;
     flex-shrink: 0;
     justify-content: flex-start;
+    
 }
 
 .header-logo-link
@@ -76,8 +77,7 @@ header {
 
 /* 以下是header里面图片 */
 .header-animation {
-    --left-margin: -13.9375rem;
-    --top-margin: 0.1875rem;
+
  position:relative;
  align-self: start;
     display: flex;
@@ -95,6 +95,8 @@ header {
     position: relative;
     align-self: start;
     max-height: 90vh;
+    --left-margin: -13.9375rem;
+    --top-margin: 0.1875rem;
 }
 /* 以上是header */
 
