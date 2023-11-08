@@ -167,16 +167,36 @@ a {
 }
 
 
-.author{
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  color: white
+
+
+/* 以下是Lina Bo Bardi, 1958 */
+
+@media only screen and (min-width : 870px){
+  .author {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+  }
 }
+
+@media only screen and (max-width:870px ){
+  .author{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    color: white;
+  }
+}
+
+
 h3:hover {
   text-align: center;
   color: rgb(246, 175, 175);
 }
 
+/* 以上是Lina Bo Bardi, 1958 */
+
+/* 以下是语言选择 */
 .frame {
   text-align: center;
   text-decoration: none;
