@@ -250,7 +250,7 @@ h3:hover {
 }
 
 
-@media (max-width: 870px) {
+@media (max-width: 870px)  {
   .card-wrapper {
   width: auto;
   height: auto; /* 设置容器的高度 */
@@ -262,6 +262,7 @@ h3:hover {
   overflow: hidden; /* 隐藏溢出的部分 */
   }
 }
+
 /* 以上是图片 */
 
 
