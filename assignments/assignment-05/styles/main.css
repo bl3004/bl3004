@@ -269,7 +269,7 @@ h3:hover {
 .box {
   position: fixed;
   top: 300px;
-  right: 15px;
+  right: 5px;
   padding: 2px;
   background: rgb(247, 128, 98, 0.5);
   width: 120px;
