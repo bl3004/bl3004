@@ -20,24 +20,23 @@
 <body>
 
 <!-- 以下是固定header栏 -->
-<div class="box-header">
+<header class="box-header">
        
        
-    <section class="grid-container">
+    <section class="centered-container">
+        <a class="neon" href="../index.html"> &lt; Back</a> 
         <div class="item">Assignment 1</div>
         <div class="item">Assignment 2</div>
         <div class="item">Assignment 3</div>
         <div class="item">Assignment 4</div>
+        <a class="neon-right" href="../index.html"> Contact &gt;</a>
     </section>
 
 <br>
 
-<a class="neon" href="../index.html"> &lt; Back</a> 
-<a class="neon-right" href="../index.html"> Contact &gt;</a>
 
 
-
-</div>
+</header>
 
 
 <!-- 以上是固定header栏 -->
@@ -47,19 +46,19 @@
 
 
 
-<div class="body-center">
+<div>
 
   <div class="container">
         <div class="title-overlay">
             <h1>CASAS OU MUSEUS?</h1>
-            <a href="https://en.wikipedia.org/wiki/Lina_Bo_Bardi"><h3>Lina Bo Bardi, 1958</h3></a>
+            <div class="author"><a href="https://en.wikipedia.org/wiki/Lina_Bo_Bardi">Lina Bo Bardi, 1958</a></div>
        
             <span class="frame">
-            <a style="color: rgb(255, 31, 31)"
-            href=        
+              <a class="lang"
+             href=        
             "../assignment-05/assign5.html">EN</a>
              |
-            <a style="color: rgb(255, 31, 31)"
+                <a class="lang"
              href="../assignment-05/assign5PT.html">PT</a>
             </span>
         </div>
@@ -74,9 +73,9 @@
 
 <!-- 以下是图片 -->
 
-    <div class="centered-image">
-        <img src="https://images.e-flux-systems.com/90170_ac357dc37f6faf4612aaa7156dea6b5f.jpg,1920" alt="Museum"; class="centered-image">
-    </div>
+    <figure class="card-wrapper">
+        <img src="https://images.e-flux-systems.com/90170_ac357dc37f6faf4612aaa7156dea6b5f.jpg,1920" alt="Museum">
+    </figure>
 
 <!-- 以上是图片 -->
 
@@ -107,12 +106,12 @@
 <br>
 
  
-      
+<div class="marquee-container">
     <marquee bgcolor="cornflowerblue" loop="-10" scrollamount="6" height="20px" width="50%" onmouseover="this.stop()" onmouseout="this.start()" style="color: white;">Coding for Spatial Practice</marquee>
+</div>
 
 
-
-   <p class="box">
+    <p class="box">
     BL's Assignment 5
     </p>
 
