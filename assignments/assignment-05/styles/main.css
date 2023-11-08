@@ -38,17 +38,20 @@ section {
 
 }
 
-.grid-container{
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  color: rgb(255, 212, 212);
+.centered-container{
+  display: flex;
+  text-align: center;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
+  color: rgb(255, 255, 255);
+  top: 5px;
 }
 
 .item{
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
   font-size: 15px;
+  padding-left: 30px;
+  text-align: center;
 }
 
 
@@ -59,7 +62,6 @@ section {
   color: white;
   position: absolute; 
   left: 10px;
-  top: 5px;
 }
 
 .neon-right {
@@ -68,7 +70,6 @@ section {
   color: white;
   position: absolute; /* 如果相对于视口右对齐，使用 absolute 定位 */
   right: 10px; /* 将元素的右边缘与包含块（这里是视口）的右边缘对齐 */
-  top: 5px;
 }
 
 
