@@ -129,7 +129,8 @@ section {
 
 
 /* 以下是title */
-.title-overlay {
+@media only screen and (min-width : 870px){
+  .title-overlay {
   position:absolute;
   top: 200px; /* Adjust the top position as needed */
   z-index: 20; /* Ensure the title appears above the image */
@@ -138,6 +139,20 @@ section {
   text-align: center;
   width:auto；
   white-space: nowrap; /* 防止文本换行 */
+}
+}
+
+@media only screen and (max-width : 870px){
+  .title-overlay {
+  position:absolute;
+  top: 150px; /* Adjust the top position as needed */
+  z-index: 20; /* Ensure the title appears above the image */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width:auto；
+  white-space: nowrap; /* 防止文本换行 */
+}
 }
 
 
