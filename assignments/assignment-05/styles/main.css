@@ -230,7 +230,7 @@ h3:hover {
 
 /* 以下是图片 */
 
-
+@media (min-width: 870px) {
 .card-wrapper {
   width: auto;
   height: auto; /* 设置容器的高度 */
@@ -240,6 +240,7 @@ h3:hover {
   box-shadow: 12px 12px 12px 12px rgba(0,0,0,0.5);
   margin-bottom: 5px;
   overflow: hidden; /* 隐藏溢出的部分 */
+}
 }
 
 .card-wrapper img {
@@ -257,7 +258,7 @@ h3:hover {
   justify-content: center; /* 水平居中 */
   align-items: center; /* 垂直居中 */
   box-shadow: 12px 12px 12px 12px rgba(0,0,0,0.5);
-  margin-bottom: 10em;
+  margin-bottom: 2em;
   overflow: hidden; /* 隐藏溢出的部分 */
   }
 }
