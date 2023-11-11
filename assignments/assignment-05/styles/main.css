@@ -276,6 +276,7 @@ h3:hover {
   box-shadow: 12px 12px 12px 12px rgba(0,0,0,0.5);
   margin-bottom: 5px;
   overflow: hidden; /* 隐藏溢出的部分 */
+  border-radius: 1em;
 }
 }
 
@@ -296,6 +297,7 @@ h3:hover {
   box-shadow: 12px 12px 12px 12px rgba(0,0,0,0.5);
   margin-bottom: 2em;
   overflow: hidden; /* 隐藏溢出的部分 */
+  border-radius: 0.5em;
   }
 }
 
