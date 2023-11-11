@@ -21,7 +21,8 @@ section {
 
 /* 以下是header栏 */
 
-
+@media only screen and (min-width : 0px) 
+{
 .box-header{
   position: fixed;
   top: 0px;
@@ -29,28 +30,89 @@ section {
   left:0px;
   padding: 0px;
   background: rgb(247, 128, 98, 0.5 );
-  width: 100%;
-  height: 40px;
+  width: auto;
+  height: 65px;
   display:block;
   align-items: center;
   justify-content: center;
  
-
 }
+}
+
+
+@media only screen and (min-width : 870px) 
+{
+.box-header{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left:0px;
+  padding: 0px;
+  background: rgb(247, 128, 98, 0.5 );
+  width: auto;
+  height: 50px;
+  display:block;
+  align-items: center;
+  justify-content: center;
+ 
+}
+}
+
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 
 .centered-container{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   color: rgb(255, 255, 255);
   top: 5px;
+
 }
+
+/* 以下是responsive背景颜色 */
+
+/* tablet layout */
+@media only screen and (min-width : 0px) 
+{
+    body{
+          /* Linear Gradient Background */background: linear-gradient(to bottom, #368e98, #ffdabd); }
+    
+  .grid-container{
+        grid-template-columns: 2fr 2fr;
+    }
+    }
+       
+
+    /* desktop layout */
+@media only screen and (min-width : 870px)
+ {
+    body{   /* Linear Gradient Background */
+      background: linear-gradient(to bottom, #3b74be, #ffdabd);
+        }
+
+
+        .grid-container{
+            grid-template-columns: repeat(3,1fr);
+        }
+}
+
+/* 以上是responsive背景颜色 */
+
+
 
 .item{
   font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
   font-size: 15px;
-  padding-left: 30px;
+
   text-align: center;
 }
 
@@ -98,33 +160,6 @@ section {
 }
 
 
-/* 以下是responsive背景颜色 */
-
-/* tablet layout */
-@media only screen and (min-width : 0px) 
-{
-    body{
-          /* Linear Gradient Background */
-  
-  background: linear-gradient(to bottom, #368e98, #ffdabd); }
-    .grid-container{
-        grid-template-columns: 1fr 1fr;
-    }
-    }
-       
-
-    /* desktop layout */
-@media only screen and (min-width : 870px)
- {
-    body{   /* Linear Gradient Background */
-      background: linear-gradient(to bottom, #3b74be, #ffdabd);
-        }
-        .grid-container{
-            grid-template-columns: repeat(3,1fr);
-        }
-}
-
-/* 以上是responsive背景颜色 */
 
 
 
