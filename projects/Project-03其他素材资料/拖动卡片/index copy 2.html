@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山羊の前端小窝</title>
+    <style>
+        body {
+            background: #f4d1cc;
+            color: #343434;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(to right, #f78ca0 0%,
+                    #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 15px;
+            font: 600 16px '';
+        }
+
+        .image {
+            transition: .3s;
+            width: 100%;
+        }
+
+        .card {
+            width: 150px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #f9f9f9d8;
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+            background-color: #f9f9f9;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    </div>
+</body>
+
+
+
+<!-- 引入jQuery库 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- 引入jQuery UI库 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+<script>
+
+    // 获取.container元素
+    const target = document.querySelector(".container");
+    // 设置图片数量为99
+    var imageCount = 99;
+    // 存储已使用的图片名称
+    var usedImages = [];
+    // 从指定URL获取图片数据
+    fetch(
+        "https://raw.githubusercontent.com/Margaret2/pantone-colors/master/pantone-colors.json"
+    )
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => {
+            // 循环生成指定数量的图片卡片
+            for (i = 0; i < imageCount; i++) {
+                // 生成图片卡片
+                var randNum = getRandomImageIndex();
+                createImage(data, randNum);
+                // 随机散布卡片
+                scatterCards();
+            }
+            // 逐个显示卡片
+            show(0);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
+    // 从img文件夹中随机选择未使用的图片名称
+    function getRandomImageIndex() {
+        var randNum = Math.ceil(Math.random() * imageCount);
+        while (usedImages.includes(randNum)) {
+            randNum = Math.ceil(Math.random() * imageCount);
+        }
+        usedImages.push(randNum);
+        return randNum;
+    }
+
+    // 根据图片数据和随机数生成图片卡片
+    function createImage(data, randNum) {
+        target.innerHTML += `<div class="card">
+<img src="image/${padNumber(randNum)}.jpg" class="image">
+<div class="color-codes"><h1>${padNumber(randNum)}</h1></div>
+</div>`;
+    }
+
+    // 将数字转换为两位数格式（例如：1 -> 01）
+    function padNumber(number) {
+        return number.toString().padStart(2, '0');
+    }
+
+    // 逐个显示卡片
+    function show(i) {
+        var cards = document.querySelectorAll(".card");
+        if (i < imageCount) {
+            setTimeout(function () {
+                cards[i].classList.add("active");
+                i++;
+                show(i);
+            }, 100);
+        }
+    }
+
+    // 随机散布卡片
+    function scatterCards() {
+        $(".card")
+            .each(function () {
+                // 随机旋转角度
+                var rNum = Math.random() * 50 - 2;
+                rNum *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+                // 随机位置偏移量
+                var x = Math.random() * 50 - 5;
+                var y = Math.random() * 50 - 5;
+                x *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+                y *= Math.floor(Math.random() * 2) == 1 ? 1 : -1;
+
+                // 设置卡片的旋转角度和位置
+                $(this).css({
+                    "-webkit-transform": "rotate(" + rNum + "2deg)",
+                    "-moz-transform": "rotate(" + rNum + "2deg)",
+                    top: x,
+                    left: y
+                });
+            })
+            // 设置卡片可拖动，并形成堆叠效果
+            .draggable({
+                stack: ".card",
+                stop: function (event, ui) {
+                    // 获取鼠标甩开时的位置
+                    var originalPosition = ui.originalPosition;
+                    // 获取当前卡片的位置
+                    var currentPosition = ui.position;
+                    // 计算位置的差值
+                    var diffX = currentPosition.left - originalPosition.left;
+                    var diffY = currentPosition.top - originalPosition.top;
+
+                    // 动画效果，让卡片飘动一段距离，方向与鼠标甩开的方向一致
+                    $(this).animate({
+                        top: "+=" + diffY + "px",
+                        left: "+=" + diffX + "px"
+                    }, 300);
+                }
+            });
+    }
+</script>
+
+</html>
+
+<!-- hello大家好，我是山羊，今天带大家制作的是可拖拽的相册页面，
+    大致的制作思路是使用循环生成指定数量的图片卡片，
+    每个卡片包含一张随机选择的图片和对应的编号代码。
+    接着，通过随机散布卡片的位置和设置卡片可拖动来实现堆叠效果。
+    最后，通过逐个显示卡片的方式展示卡片。整个过程中，
+    使用了jQuery和jQuery UI库来实现图片卡片的动画效果和拖动功能。 -->
