@@ -1,12 +1,12 @@
 body {
-    background: #f4d1cc;
+    background: rgb(72, 74, 99);
     color: #343434;
     display: flex;
     align-items: center;
     justify-content: center;
     /* 设置背景色 */
     background-image: linear-gradient(to right,
-            #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    rgb(72, 74, 99) 0%, rgb(72, 74, 99) 19%,rgb(72, 74, 99) 60%,rgb(72, 74, 99) 100%);
 }
 
 .shell {
