@@ -38,7 +38,7 @@ function getRandomImageIndex() {
 // 根据图片数据和随机数生成图片卡片 
 function createImage(data, randNum) {
     target.innerHTML += `<div class="card"> 
-        <img src="./Image3/${padNumber(randNum)}.jpg" class="image"> 
+        <img src="./ImageHomepage/${padNumber(randNum)}.jpg" class="image"> 
         <div class="color-codes"><h1>${padNumber(randNum)}</h1></div> 
         </div>`;
 }
