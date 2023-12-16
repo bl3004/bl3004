@@ -95,3 +95,14 @@ function scatterCards() {
             }
         });
 }
+
+
+function resizeShell() {
+    const shell = document.querySelector('.shell');
+    shell.style.width = window.innerWidth + 'px';
+    shell.style.height = window.innerHeight + 'px';
+}
+
+// 调整画布大小并监听窗口大小变化
+resizeShell();
+window.addEventListener('resize', resizeShell);

@@ -5,8 +5,7 @@ body {
     align-items: center;
     justify-content: center;
     /* 设置背景色 */
-    background-image: linear-gradient(to right,
-    rgb(72, 74, 99) 0%, rgb(72, 74, 99) 19%,rgb(72, 74, 99) 60%,rgb(72, 74, 99) 100%);
+    background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
 }
 
 .shell {
@@ -16,6 +15,19 @@ body {
     justify-content: center;
     overflow: hidden;
 }
+
+
+
+.color-codes h1 {
+    position: absolute; /* 设置为绝对定位 */
+    bottom: 0px; /* 调整底部距离 */
+    left: 50%; /* 设置水平居中 */
+    transform: translateX(-50%); /* 使元素在水平方向上居中 */
+    font-size: 16px;
+    color: #6a7ea3;
+    font-family: 'Luckiest Guy', cursive; 
+}
+
 
 h1 {
     margin-top: 15px;
@@ -28,10 +40,11 @@ h1 {
 }
 
 .card {
-    width: 150px;
+    width: 200px;
+    height: 130px;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #f9f9f9d8;
