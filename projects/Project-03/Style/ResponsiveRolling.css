@@ -1,4 +1,14 @@
 
+.header_text{
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    font-size:30px;
+    color:#a18cd1;
+    position: flex;
+    text-align: center;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -21,9 +31,10 @@ body {
 
 /* 设置.shell元素为相对定位，flex布局，水平和垂直居中对齐，宽度和高度为100%，盒模型为border-box，背景颜色为rgba(99, 99, 99, 0.8) */
 .shell {
-    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
+    height: 100vh; /* 设置视口高度 */
     align-items: center;
     width: 100%;
     height: 100%;
@@ -41,17 +52,36 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: -80px;
+    margin-bottom: 10px;
 }
 
 
 
 .enterbutton{
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Luckiest Guy', cursive;
     font-family: 'Mooli', sans-serif;
     font-family: 'Silkscreen', sans-serif;
-    color:white
+    color:white;
+    margin-bottom: 5px;
+    
 }
+
+.enterbutton a {
+    text-decoration: none; /* 移除下划线 */
+    color: #ffffff; /* 设置链接文字颜色 */
+    /* 其他样式属性 */
+}
+
+
+.enterbutton a:hover {
+    /* 设置悬停时的样式 */
+    color: #72669c; /* 修改悬停时的颜色 */
+}
+
+
+
+
 /* 设置.prev和.next元素过渡动画时间为0.25秒，层级为99999，底部偏移量为5px */
 .prev,
 .next {
@@ -63,18 +93,21 @@ body {
 /* 设置.prev和.next元素中的i元素字体大小为40px，颜色为#fff，光标为指针，文字阴影为0 0 10px #ffffff */
 .prev i,
 .next i {
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal; /* 将字体样式设置为正常，去除斜体效果 */
     color: #fff;
     cursor: pointer;
     text-shadow: 0 0 10px #ffffff;
 }
 
+
 /* 设置.shell_body元素宽度为100%，缩放为0.8倍，上内边距为20px，下内边距为150px */
 .shell_body {
     width: 100%;
     transform: scale(.8);
-    padding: 20px 0 150px 0;
+    padding: 15px 0 120px 0;
+    display: relative;
+   
 }
 
 /* 设置.shell_slider元素为相对定位，过渡动画时间为1秒，背景为透明 */
@@ -121,7 +154,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 4px solid #fff;
+    border: 2px solid #fff;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
@@ -136,7 +169,7 @@ body {
 /* 设置.box元素中的h1元素文字阴影为0 0 30px #1f05b4，字体大小为100px */
 .box h1 {
     text-shadow: 0 0 30px #1f05b4;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
@@ -178,4 +211,15 @@ body {
     border-right-width: 5px;
     transform: translate3d(-1px, 0, -60px) rotateY(90deg);
     transform-origin: 100%;
+}
+
+
+
+.subtitle{
+    font-size: 10px;
+    font-family: font-family: 'Luckiest Guy', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    margin:3px;
+    text-align: center;
 }
