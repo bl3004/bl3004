@@ -1,15 +1,14 @@
-
 const target = document.querySelector(".shell");
 // 设置图片数量为20
 var imageCount = 20;
 // 存储已使用的图片名称 
 var usedImages = [];
-// 从指定URL获取图片数据 
+// 从新的URL获取图片数据 
 fetch(
-    "https://raw.githubusercontent.com/Margaret2/pantone-colors/master/pantone-colors.json"
+    "https://bl3004.github.io/bl3004/projects/Project-03/Image3"
 )
     .then((res) => {
-        return res.json();
+        return res.blob();
     })
     .then((data) => {
         // 循环生成指定数量的图片卡片 
@@ -38,7 +37,7 @@ function getRandomImageIndex() {
 // 根据图片数据和随机数生成图片卡片 
 function createImage(data, randNum) {
     target.innerHTML += `<div class="card"> 
-        <img src="./Image3/${padNumber(randNum)}.jpg" class="image"> 
+        <img src="https://bl3004.github.io/bl3004/projects/Project-03/Image3/${padNumber(randNum)}.jpg" class="image"> 
         <div class="color-codes"><h1>${padNumber(randNum)}</h1></div> 
         </div>`;
 }
@@ -96,4 +95,3 @@ function scatterCards() {
             }
         });
 }
-
