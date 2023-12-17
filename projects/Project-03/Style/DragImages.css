@@ -117,6 +117,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
  font-family: 'Luckiest Guy', cursive;
  font-family: 'Mooli', sans-serif;
  font-family: 'Silkscreen', sans-serif;
+ text-decoration: none;
     
 }
 .information:hover{
@@ -136,7 +137,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
     font-family: 'Luckiest Guy', cursive;
     font-family: 'Mooli', sans-serif;
     font-family: 'Silkscreen', sans-serif;
-
+    text-decoration: none;
     
 }
 
