@@ -16,33 +16,38 @@
         }
 
         body {
-            height: 100vh;
+            height: 90vh;
             display: flex;
-            align-items: center;
+            
             justify-content: center;
+           
         background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
         }
-        .shell{
+        .header_navi{
             display: flex;
             justify-content: center;
+            position: fixed;
+            top:130px;
+
+
         }
         .button,.portrait{
             background-color: #50536e;
-            width: 170px;
-            height: 65px;
+            width: 180px;
+            height: 30px;
             text-align: center;
-            line-height: 65px;
+            line-height: 30px;
             transition: .3s;
             cursor: pointer;
         }
         .portrait::before{
             content: '';
             display: block;
-            width: 100px;
-            height: 100px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            transform: translate(30px,-30px);
-            background-image: url('./portrait.png');
+            transform: translate(50px,-25px); 
+
             background-size: cover;
             border: 10px solid #fff;
         }
@@ -51,58 +56,93 @@
             background-color: #e07a5f;
             transform: translate(-20px,-200px);
             border-radius: 10px;
-            padding: 20px 0;
+            padding: 10px 0;
             line-height: 0;
             height: 0;
             transition: .3s;
             opacity: 0;
+            font-size: 10px;
+         font-family: 'Luckiest Guy', cursive;
+         font-family: 'Mooli', sans-serif;
+         font-family: 'Silkscreen', sans-serif;
             
         }
-        .button:hover{
+        .information:hover{
             background-color: #d15a39;
         }
-        .button li:hover{
+        .information li:hover{
             background-color: #ffb29d;
         }
+
         .button ul li{
             height: 0;
             transition: .2s;
             opacity: 0;
-            transform: translateY(-65px);
+            
             background-color: #e07a5f;
-        }
+            font-size: 10px;
+            font-family: 'Luckiest Guy', cursive;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Silkscreen', sans-serif;
+        
+            
+}
+
         .button:hover li{
-            height: 65px;
+            height: 35px;
+            /* 往上弹出的背景盒子大小 */
             opacity: 1;
-            transform: translateY(0);
+            transform: translateY(-101px);/* 往上弹出的距离 */
         }
+
+
+
         .portrait:hover .information{
             opacity: 1;
             line-height: 65px;
-            transform: translate(-20px,-10px);
+            transform: translate(-20px,10px);
             height: auto;
         }
+
+        .navi{
+         font-size: 15px;
+         font-family: 'Luckiest Guy', cursive;
+         font-family: 'Mooli', sans-serif;
+         font-family: 'Silkscreen', sans-serif;
+         margin-left: 5px;
+         margin-right: 5px;
+        }
+
+
+
+
     </style>
+
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mooli&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 
+
+
+
+
 <body>
-    <ul class="shell">
+    <ul class="header_navi">
         
         
         <li class="portrait">
             <ul class="information">
                 <li>HOMEPAGE</li>
-                <li>REFRESH</li>
+                <li>REFRESH ↻</li>
                 <li>MORE INFO</li>
             </ul>
         </li>
 
         <li class="button">
-            <span>ALL</span>
+            <span class="navi">ALL</span>
         </li>
     
         <li class="button">
-            <span>1970s-1980s</span>
+            <span class="navi">1970s-1980s</span>
             <ul>
                 <li>Early Games</li>
             </ul>
@@ -110,7 +150,7 @@
             
 
         <li class="button">
-            <span>1980s-1990s</span>
+            <span class="navi">1980s-1990s</span>
             <ul>
                 <li>8/16-bit Era</li>
                 <li>PC Games</li>
@@ -119,7 +159,7 @@
             
 
         <li class="button">
-            <span>1990s-2000s</span>
+            <span class="navi">1990s-2000s</span>
             <ul>
                 <li>3D Graphics Era</li>
                 <li>FPS & RTS</li>
@@ -128,17 +168,17 @@
 
 
         <li class="button">
-            <span>2000s-2010s</span>
+            <span class="navi">2000s-2010s</span>
             <ul>
                 <li>HD Graphics Era</li>
-                <li>Online Multiplayer Games</li>
+                <li>Online Multiplayer</li>
             </ul>
         </li>
 
 
 
         <li class="button">
-            <span>2010s-NOW</span>
+            <span class="navi">2010s-NOW</span>
             <ul>
                 <li>Highly Realistic Era</li>
                 <li>Open-World Games</li>
