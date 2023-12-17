@@ -106,3 +106,9 @@ function resizeShell() {
 // 调整画布大小并监听窗口大小变化
 resizeShell();
 window.addEventListener('resize', resizeShell);
+
+
+
+function refreshPage() {
+    location.reload(true); // 使用location.reload(true)来强制刷新页面
+}
