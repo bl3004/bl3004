@@ -3,32 +3,97 @@ console.log('this works');
 const games = [
     {
         image:
-        "./Image4/01.jpg",
-        name: "AAA",
-        year: "1970"
-        
+        "./Image4/Pong1972.jpg",
+        time:"1972",
+        name: "Pong",
+        year: "1970s" 
     },
     {
-        image: "./Image4/02.jpg",
-        name: "BBB",
-        year: "1980"
-        
+        image: "./Image4/SpaceInvaders1978.jpg",
+        time:"1978",
+        name: "Space Invaders",
+        year: "1970s" 
     },
     {
-        image:"./Image4/03.jpg",
-        name: "CCC",
-        year: "1990"
-        
-        
+        image:"./Image4/Asteroids1979.jpg",
+        name: "Asteroids",
+        year: "1970s"
     },
     {
         image:
-        "./Image4/04.jpg",
-        name: "DDD",
-        year: "1990"
-    
+        "./Image4/LunarLander1979.jpg",
+        name: "Lunar Lander",
+        year: "1970s"
     },
-    
+    {
+        image:
+        "./Image4/Galaxian1979.jpg",
+        name: "Galaxian",
+        year: "1970s"
+    },
+    {
+        image:
+        "./Image4/MissileCommand1980.jpg",
+        name: "Missile Command",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Pac-Man1980.jpg",
+        name: "Pac-Man",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Defender1980.jpg",
+        name: "Defender",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Battlezone1980.jpg",
+        name: "Battlezone",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Berzerk1980.jpg",
+        name: "Berzerk",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/DonkeyKong1981.jpg",
+        name: "Donkey Kong",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Centipede1981.jpg",
+        name: "Centipede",
+        year: "1980s"
+    },
+  
+    {
+        image:
+        "./Image4/Frogger1981.jpg",
+        name: "Frogger",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Galaga1981.jpg",
+        name: "Galaga",
+        year: "1980s"
+    },
+    {
+        image:
+        "./Image4/Qbert1982.jpg",
+        name: "Q*bert",
+        year: "1980s"
+    },
+
+
 ];
 
 
@@ -52,15 +117,18 @@ const renderGamesToPage = (items) => {
 
 
         //  name
-        let title = document.createElement("h3");
+        let title = document.createElement("h1");
 
         title.textContent = games[i].name;
 
 
+       
 
         //  color
         let year = document.createElement("p");
         year.textContent = games[i].year;
+
+
 
         //  image
         let image = document.createElement("img");
@@ -117,21 +185,44 @@ filterBtns.addEventListener('click', filterFn)
 
 
 
-function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+// function scrollToTop() {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth'
+//     });
+//   }
+
+//   // Show/hide the button based on scroll position
+//   window.onscroll = function() {
+//     var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+//     var backToTopBtn = document.getElementById('backToTopBtn');
+
+//     if (scrollPos > 300) {
+//       backToTopBtn.style.display = 'block';
+//     } else {
+//       backToTopBtn.style.display = 'none';
+//     }
+//   };
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.card');
+  
+    cards.forEach(function (card) {
+      card.addEventListener('click', function () {
+        this.classList.toggle('is-flipped');
+      });
     });
-  }
-
-  // Show/hide the button based on scroll position
-  window.onscroll = function() {
-    var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-    var backToTopBtn = document.getElementById('backToTopBtn');
-
-    if (scrollPos > 300) {
-      backToTopBtn.style.display = 'block';
-    } else {
-      backToTopBtn.style.display = 'none';
-    }
-  };
+  });
+  
