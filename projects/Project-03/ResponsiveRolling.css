@@ -1,4 +1,9 @@
 
+
+
+
+
+
 .header_text{
     font-family: 'Luckiest Guy', cursive;
     font-family: 'Mooli', sans-serif;
@@ -16,7 +21,6 @@
     font-size:10px;
     color:  #fff;
     text-align: center;
-
 }
 
 
@@ -165,7 +169,7 @@ body {
 .frame:after {
     content: "";
     position: absolute;
-    bottom: -16%;
+    bottom: -10%;
     width: 100%;
     height: 60px;
     background: #ffffff1c;
@@ -182,12 +186,28 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 2px solid #fff; /* Increase border width to include the expanded area */
     perspective: 1000px;
     transform-style: preserve-3d;
+    box-sizing: border-box; /* Include border width and padding in the total width and height */
 }
 
-/* 设置.box元素中的h1和span元素颜色为#fff，Z轴平移距离为20px */
+
+.box::before,
+.box::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px); /* Adjust the width to include the expanded area and border */
+    height: calc(100% + 8px); /* Adjust the height to include the expanded area and border */
+    bottom: -4px; /* Adjust the bottom offset to include the expanded area and border */
+    left: -4px; /* Adjust the left offset to include the expanded area and border */
+    border: 2px solid #fff; /* Set border color */
+    box-shadow: 0px 0px 15px 5px #ffffff1c; /* Set box shadow */
+    transform: rotateX(90deg) translate3d(0px, -20px, 0px);
+    box-sizing: border-box; /* Include border width and padding in the total width and height */
+}
+
+
 .box h1,
 .box span {
     color: #fff;
@@ -207,6 +227,7 @@ body {
     bottom: 20px;
     padding: 0 25px;
     text-shadow: 0 0 10px #826fc8;
+    
 }
 
 /* 设置.front、.left和.right元素的盒阴影为0 0 50px #ffffff，背景图大小为cover */
