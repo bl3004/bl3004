@@ -92,6 +92,12 @@ const games = [
         name: "Q*bert",
         year: "1980s"
     },
+    {
+        image:
+        "./Image4/Qbert1982.jpg",
+        name: "Q*bert",
+        year: "1980s"
+    },
 
 
 ];
