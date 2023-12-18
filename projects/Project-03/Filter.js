@@ -472,13 +472,6 @@ const games = [
     },
     {
         image:
-        "./Image4/AssassinsCreedII2009.jpg",
-        name: "Assassin's Creed II",
-        year: "2000s",
-        description:"Action-adventure, expanding the Assassin's Creed universe with Renaissance Italy, parkour, and a captivating historical storyline."
-    },
-    {
-        image:
         "./Image4/MassEffect22010.jpg",
         name: "MassEffect2",
         year: "2010s",
