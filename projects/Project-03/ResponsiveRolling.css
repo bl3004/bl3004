@@ -86,7 +86,16 @@ body {
     bottom: -80px;
     margin-bottom: 30px;
 }
-
+.button2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100px;
+    margin-bottom: 10px;
+}
 
 
 .enterbutton{
@@ -108,7 +117,16 @@ body {
 .enterbutton a:hover {
     color:  #826fc8; /* 修改悬停时的颜色 */
 }
+.filterbutton a {
+    text-decoration: none; /* 移除下划线 */
+    color: #ffffff; /* 设置链接文字颜色 */
+    font-size: 30px;
+}
 
+
+.filterbutton a:hover {
+    color:  #826fc8; /* 修改悬停时的颜色 */
+}
 
 
 
