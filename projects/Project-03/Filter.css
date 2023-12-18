@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+height: 100%;
+background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
+}
+
+body {
+  font-size: 15px;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  position:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+
+padding: 20px;
+width: 100%;
+}
+
+ul {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-gap: 20px;
+}
+
+li {
+list-style-type: none;
+border: 1px dashed #ffffff;
+border-radius: 20px; 
+padding: 10px;
+margin: 10px;
+}
+
+li:hover {
+background-color: #826fc8; 
+}
+
+
+.hide{
+  display:none;
+}
+
+.show{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px; 
+  }
+
+  .explain_text {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    font-size: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    color: white;
+  }
+  
+
+
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* 适当调整按钮上方的间距 */
+}
+
+.filter-btn {
+  background-color: #ffffff; /* 按钮背景色 */
+  color: #9a7bc5; /* 按钮文字颜色 */
+  border: none;
+  padding: 5px 10px; /* 按钮内边距，垂直方向10px，水平方向20px */
+  margin: 0 8px; /* 按钮之间的间距 */
+  cursor: pointer;
+  border-radius: 20px; /* 圆角边框 */
+  font-size: 13px;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+}
+
+.filter-btn.active {
+  background-color: #826fc8; 
+  color: #ffffff;
+}
+
+
+.button_back{
+  background-color: #ffffff; /* 按钮背景色 */
+  color: #9a7bc5; /* 按钮文字颜色 */
+  border: none;
+  padding: 5px 10px; /* 按钮内边距，垂直方向10px，水平方向20px */
+  margin: 0 8px; /* 按钮之间的间距 */
+  cursor: pointer;
+  border-radius: 20px; /* 圆角边框 */
+  font-size: 13px;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  text-decoration: none;
+}
+
+.button_back:hover {
+  background-color: #826fc8; 
+  color: #ffffff;
+}
+
+/* .filters {
+  display: flex;
+  justify-content: flex-end; // 或 justify-content: space-between;
+  margin-top: 20px;
+} */
+
+
+/*  
+.item--1 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 1;
+grid-column-end: 2;
+
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.item--2 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 2;
+grid-column-end: 3;
+
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.item--3 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 3;
+grid-column-end: 4;
+
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.item--4 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 1;
+grid-column-end: 2;
+
+grid-row-start: 2;
+grid-row-end: 3;
+}
+
+.item--5 {
+/* place code you want to apply to each individual item here */
+/* 
+grid-column-start: 3;
+grid-column-end: 5;
+
+grid-row-start: 2;
+grid-row-end: 3;
+}
+*/
+
+
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%; 
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  color: #9a7bc5;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: none;
+  border-radius: 20px; 
+  font-size: 13px;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Mooli', sans-serif;
+  font-family: 'Silkscreen', sans-serif;
+  text-decoration: none;
+}
+
+#backToTopBtn:hover {
+  background-color: #826fc8; 
+  color: #ffffff;
+}
