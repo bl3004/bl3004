@@ -225,4 +225,18 @@ grid-row-end: 3;
 
 
 
+.card .description {
+  display: none;
+}
+
+.card.is-flipped .description {
+  display: block;
+}
+
+
+
+
+
+
+
 
