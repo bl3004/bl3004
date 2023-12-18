@@ -556,11 +556,155 @@ const games = [
     },
     {
         image:
-        "./Image4/TheLastofUs2013.jpg",
-        name: "The Last of Us",
+        "./Image4/TombRaider2013.jpg",
+        name: "Tomb Raider",
         year: "2010s",
-        description:"Post-apocalyptic action-adventure, with a heartfelt story, intense stealth gameplay, and a bond between Joel and Ellie."
+        description:"Reboot of the iconic series, portraying Lara Croft's origin story with survival elements, exploration, and cinematic action."
     },
+    {
+        image:
+        "./Image4/Divinity22017.jpg",
+        name: "Original Sin 2",
+        year: "2010s",
+        description:"Critically acclaimed RPG with deep storytelling, rich character customization, and turn-based combat in a fantasy world."
+    },
+    {
+        image:
+        "./Image4/Cuphead2017.jpg",
+        name: "Cuphead",
+        year: "2010s",
+        description:"Run-and-gun indie game, combining 1930s cartoon aesthetics with challenging boss battles and unique platforming."
+    },
+    {
+        image:
+        "./Image4/MonsterHunter2018.jpg",
+        name: "Monster Hunter: World",
+        year: "2010s",
+        description:"Action RPG, hunting massive monsters in a living, breathing ecosystem, and cooperative multiplayer exploration."
+    },
+    {
+        image:
+        "./Image4/RedDeadRedemption22018.jpg",
+        name: "Red Dead Redemption 2",
+        year: "2010s",
+        description:"Western epic, following Arthur Morgan in the Van der Linde gang, with a vast open world and compelling narrative."
+    },
+    {
+        image:
+        "./Image4/Sekiro2019.jpg",
+        name: "Sekiro: Shadows Die Twice",
+        year: "2010s",
+        description:"Action-adventure with challenging combat, featuring a shinobi's journey in a dark, Sengoku-era world."
+    },
+    {
+        image:
+        "./Image4/OuterWilds2019.jpg",
+        name: "Outer Wilds",
+        year: "2010s",
+        description:"Space exploration and mystery, unraveling a time-looped narrative as a spacefarer discovering the secrets of the cosmos."
+    },
+    {
+        image:
+        "./Image4/Control2019.jpg",
+        name: "Control",
+        year: "2010s",
+        description:"Supernatural action-adventure, investigating the Federal Bureau of Control, with mind-bending powers and a surreal environment."
+    },
+    {
+        image:
+        "./Image4/DiscoElysium2019.jpg",
+        name: "Disco Elysium",
+        year: "2010s",
+        description:"Narrative-driven RPG with a unique skill system, exploring a city and solving a complex murder mystery."
+    },
+    {
+        image:
+        "./Image4/StarWarsJedi2019.jpg",
+        name: "Star Wars Jedi: Fallen Order",
+        year: "2010s",
+        description:"Action-adventure set in the Star Wars universe, following Cal Kestis on a quest against the Empire."
+    },
+    {
+        image:
+        "./Image4/ApexLegends2019.jpg",
+        name: "Apex Legends",
+        year: "2010s",
+        description:"Battle royale shooter, featuring unique legends with diverse abilities, strategic gameplay, and dynamic team-based competition."
+    },
+    {
+        image:
+        "./Image4/TotalWar2019.jpg",
+        name: "Total War: Three Kingdoms",
+        year: "2010s",
+        description:"Historical strategy, depicting the Three Kingdoms period of ancient China with epic battles and political intrigue."
+    },
+    {
+        image:
+        "./Image4/SlaytheSpire2019.jpg",
+        name: "Slay the Spire",
+        year: "2010s",
+        description:"Roguelike deck-building game, ascending a procedurally generated spire with strategic card-based combat."
+    },
+    {
+        image:
+        "./Image4/APlagueTale2019.jpg",
+        name: "A Plague Tale: Innocence",
+        year: "2010s",
+        description:"Action-adventure with a gripping narrative, exploring medieval France amid the Black Plague and supernatural threats."
+    },
+    {
+        image:
+        "./Image4/Hitman32021.jpg",
+        name: "Hitman 3",
+        year: "2020s",
+        description:"Stealth assassination, concluding the World of Assassination trilogy with creative sandbox locations and immersive storytelling."
+    },
+    {
+        image:
+        "./Image4/Cyberpunk20772020.jpg",
+        name: "Cyberpunk 2077",
+        year: "2020s",
+        description:"Ambitious RPG set in Night City, marred by technical issues, starring V and exploring a dystopian future."
+    },
+    {
+        image:
+        "./Image4/Valheim2021.jpg",
+        name: "Valheim",
+        year: "2020s",
+        description:"Viking survival, exploring a procedurally generated world, crafting, building, and battling mythical creatures in co-op adventures."
+    },
+    {
+        image:
+        "./Image4/ItTakesTwo2021.jpg",
+        name: "It Takes Two",
+        year: "2020s",
+        description:"Co-op action-adventure, innovative gameplay, and a heartfelt story as two dolls navigate whimsical challenges in a magical world."
+    },
+    {
+        image:
+        "./Image4/Deathloop2021.jpg",
+        name: "Deathloop",
+        year: "2020s",
+        description:"Time-loop FPS, playing as Colt in a stylish, mind-bending narrative, unraveling the mysteries of Blackreef."
+    },
+    {
+        image:
+        "./Image4/Battlefield20422021.jpg",
+        name: "Battlefield 2042",
+        year: "2020s",
+        description:"Large-scale multiplayer FPS, offering dynamic weather, diverse maps, and futuristic warfare in a stunning, chaotic experience."
+    },
+    {
+        image:
+        "./Image4/FarCry62021.jpg",
+        name: "Far Cry 6",
+        year: "2020s",
+        description:"Open-world FPS, battling a dictator on the fictional island of Yara, featuring guerrilla warfare and chaotic exploration."
+    },
+
+
+
+
 
 
 
