@@ -123,7 +123,7 @@ const renderGamesToPage = (items) => {
 
 
         //  name
-        let title = document.createElement("h1");
+        let title = document.createElement("h2");
 
         title.textContent = games[i].name;
 
