@@ -102,12 +102,10 @@ body {
 .enterbutton a {
     text-decoration: none; /* 移除下划线 */
     color: #ffffff; /* 设置链接文字颜色 */
-    /* 其他样式属性 */
 }
 
 
 .enterbutton a:hover {
-    /* 设置悬停时的样式 */
     color:  #826fc8; /* 修改悬停时的颜色 */
 }
 

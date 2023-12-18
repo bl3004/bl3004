@@ -3,7 +3,7 @@ const target = document.querySelector(".shell");
 var imageCount = 20;
 // 存储已使用的图片名称 
 var usedImages = [];
-// 从新的URL获取图片数据 
+
 fetch(
     "https://bl3004.github.io/bl3004/projects/Project-03/Image3"
 )
