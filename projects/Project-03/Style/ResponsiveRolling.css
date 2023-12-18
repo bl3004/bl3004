@@ -4,9 +4,39 @@
     font-family: 'Mooli', sans-serif;
     font-family: 'Silkscreen', sans-serif;
     font-size:30px;
-    color:#a18cd1;
+    color: #826fc8;
     text-align: center;
+    margin-top: 10px;
 }
+
+.header_text_main{
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    font-size:10px;
+    color:  #fff;
+    text-align: center;
+
+}
+
+
+@media screen and (min-width: 800px) {
+    .header_text_main {
+        padding-left: 300px;  /* Adjust padding for medium screens */
+        padding-right: 300px; /* Adjust padding for medium screens */
+    }
+}
+
+@media (max-width:800px) and (min-width: 600px) {
+    .header_text_main {
+        padding-left: 100px; /* Adjust padding for large screens */
+        padding-right: 100px; /* Adjust padding for large screens */
+    }
+}
+
+
+
+
 
 * {
     padding: 0;
@@ -33,7 +63,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* 设置视口高度 */
     align-items: center;
     width: 100%;
     height: 100%;
@@ -51,7 +80,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     bottom: -80px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 
@@ -75,7 +104,7 @@ body {
 
 .enterbutton a:hover {
     /* 设置悬停时的样式 */
-    color: #72669c; /* 修改悬停时的颜色 */
+    color:  #826fc8; /* 修改悬停时的颜色 */
 }
 
 
@@ -102,11 +131,11 @@ body {
 
 /* 设置.shell_body元素宽度为100%，缩放为0.8倍，上内边距为20px，下内边距为150px */
 .shell_body {
-    width: 100%;
     transform: scale(.8);
-    padding: 15px 0 120px 0;
+    padding: 8px 0 120px 0;
     display: relative;
-   
+    width: 100%;
+    
 }
 
 /* 设置.shell_slider元素为相对定位，过渡动画时间为1秒，背景为透明 */
@@ -167,7 +196,7 @@ body {
 
 /* 设置.box元素中的h1元素文字阴影为0 0 30px #1f05b4，字体大小为100px */
 .box h1 {
-    text-shadow: 0 0 30px #1f05b4;
+    text-shadow: 0 0 30px #826fc8;
     font-size: 40px;
 }
 
@@ -177,7 +206,7 @@ body {
     position: absolute;
     bottom: 20px;
     padding: 0 25px;
-    text-shadow: 0 0 10px #1f05b4;
+    text-shadow: 0 0 10px #826fc8;
 }
 
 /* 设置.front、.left和.right元素的盒阴影为0 0 50px #ffffff，背景图大小为cover */
@@ -216,9 +245,11 @@ body {
 
 .subtitle{
     font-size: 10px;
-    font-family: font-family: 'Luckiest Guy', cursive;
+    font-family:  'Luckiest Guy', cursive;
     font-family: 'Mooli', sans-serif;
     font-family: 'Silkscreen', sans-serif;
     margin:3px;
     text-align: center;
 }
+
+

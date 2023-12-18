@@ -1,16 +1,23 @@
 body {
-    background: rgb(72, 74, 99);
-    color: #343434;
     display: flex;
     align-items: center;
     justify-content: center;
     /* 设置背景色 */
-    background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
+    background-image:linear-gradient(to right,  #826fc8, #fbc2eb);
 }
 
-
-
-
+.fixed-text{
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 20px;
+    color:  #826fc8;
+    z-index: 9999;
+}
 
 .shell {
     
@@ -29,7 +36,7 @@ body {
     left: 50%; /* 设置水平居中 */
     transform: translateX(-50%); /* 使元素在水平方向上居中 */
     font-size: 16px;
-    color: #6a7ea3;
+    color: #826fc8;
     font-family: 'Luckiest Guy', cursive; 
 }
 
@@ -71,9 +78,9 @@ h1 {
 }
 
 body {
-    height: 90vh;
+    height: 100%;
+    /* 随机分布图片占页面高度 */
     display: flex;
-    
     justify-content: center;
    
 background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
@@ -82,19 +89,20 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
     display: flex;
     justify-content: center;
     position: fixed;
-    top:621px;
-
+    top:550px;
+    /* 下拉栏的位置 */
+    z-index: 9999;
 
 }
 .button,.portrait{
-    background-color: #50536e;
-    width: 180px;
-    height: 30px;
+  
     text-align: center;
     line-height: 30px;
     transition: .3s;
     cursor: pointer;
 }
+
+
 .portrait::before{
     content: '';
     display: block;
@@ -103,19 +111,21 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
     border-radius: 50%;
     transform: translate(50px,-25px); 
     /* 圆圈的位置 */
-
     background-size: cover;
-    border: 10px solid #fff;
+    border: 10px solid #826fc8;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
+
+
 .information{
     width: 220px;
-    background-color: #e07a5f;
+    background-color: #826fc8;
     transform: translate(-20px,200px);
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 5px 0;
     line-height: 0;
     height: 0;
-    transition: .3s;
+    transition: .5s;
     opacity: 0;
     font-size: 10px;
     font-family: 'Luckiest Guy', cursive;
@@ -124,6 +134,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
     text-decoration: none;
     
 }
+/*  
 .information:hover{
     background-color: #d15a39;
 }
@@ -133,7 +144,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
 
 .button ul li{
     height: 0;
-    transition: .2s;
+    transition: .6s;
     opacity: 0;
     
     background-color: #e07a5f;
@@ -144,6 +155,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
     text-decoration: none;
     
 }
+*/
 
 .button:hover li{
     height: 35px;
@@ -157,7 +169,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
 .portrait:hover .information{
     opacity: 1;
     line-height: 65px;
-    transform: translate(-20px,-320px);
+    transform: translate(-20px,-310px);
     /* 菜单上拉 */
     height: auto;
 }
