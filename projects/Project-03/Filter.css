@@ -26,10 +26,15 @@ body {
   justify-content: center;
 }
 
-.list {
 
-padding: 20px;
-width: 100%;
+
+
+.list {
+padding: 10px;
+width: auto;
+display:flex;
+flex-direction: column;
+align-items: center;
 }
 
 
@@ -45,6 +50,7 @@ grid-gap: 20px;
 
 
 @media screen and (max-width: 768px) {
+ 
   ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

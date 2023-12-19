@@ -24,17 +24,17 @@
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
     .header_text_main {
-        padding-left: 300px;  /* Adjust padding for medium screens */
-        padding-right: 300px; /* Adjust padding for medium screens */
+        padding-left: 300px;  
+        padding-right: 300px; 
     }
 }
 
 @media (max-width:800px) and (min-width: 600px) {
     .header_text_main {
-        padding-left: 100px; /* Adjust padding for large screens */
-        padding-right: 100px; /* Adjust padding for large screens */
+        padding-left: 100px; 
+        padding-right: 100px; 
     }
 }
 
