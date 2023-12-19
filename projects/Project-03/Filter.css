@@ -116,8 +116,9 @@ img {
   color: #9a7bc5;
   border: none;
   padding: 5px 10px; 
-  margin: 0 8px; /* 按钮之间的间距 */
+  margin: 0 8px;
   cursor: pointer;
+  border-radius: 20px;
   font-size: 13px;
   font-family: 'Luckiest Guy', cursive;
   font-family: 'Mooli', sans-serif;
