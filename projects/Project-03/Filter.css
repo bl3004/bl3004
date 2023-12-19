@@ -99,13 +99,22 @@ img {
 
 
 
-
+  @media screen and (min-width: 768px){
 .filters {
   display: flex;
   justify-content: center;
   margin-top: 20px; /* 适当调整按钮上方的间距 */
 }
-
+  }
+  @media screen and (max-width: 768px){
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px; /* 适当调整按钮上方的间距 */
+    }
+      }
+    
 .filter-btn {
   background-color: #ffffff; 
   color: #9a7bc5; 
@@ -145,6 +154,22 @@ img {
   background-color: #826fc8; 
   color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .filters {
   display: flex;
