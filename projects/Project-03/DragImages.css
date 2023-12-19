@@ -17,9 +17,9 @@ body {
     font-family: 'Mooli', sans-serif;
     font-family: 'Silkscreen', sans-serif;
     font-size: 20px;
-    color:  #826fc8;
+    color: #fbc2eb;
     z-index: 9999;
-    
+    text-shadow: 2px 2px 4px rgba(120, 93, 188, 0.5);
 }
 
 .shell {
