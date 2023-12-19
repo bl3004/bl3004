@@ -814,26 +814,23 @@ filterBtns.addEventListener('click', filterFn)
 
 
 
+window.onscroll = function () {
+    showBackToTopButton();
+};
 
-// function scrollToTop() {
-//     window.scrollTo({
-//       top: 0,
-//       behavior: 'smooth'
-//     });
-//   }
+function showBackToTopButton() {
+    var button = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
 
-//   // Show/hide the button based on scroll position
-//   window.onscroll = function() {
-//     var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
-//     var backToTopBtn = document.getElementById('backToTopBtn');
-
-//     if (scrollPos > 300) {
-//       backToTopBtn.style.display = 'block';
-//     } else {
-//       backToTopBtn.style.display = 'none';
-//     }
-//   };
-
+function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 
 
@@ -853,7 +850,7 @@ filterBtns.addEventListener('click', filterFn)
   
     cards.forEach(function (card) {
       card.addEventListener('click', function () {
-        // Toggle the 'is-flipped' class on the clicked card
+    
         this.classList.toggle('is-flipped');
       });
     });
