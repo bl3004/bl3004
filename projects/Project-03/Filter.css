@@ -28,12 +28,27 @@ padding: 20px;
 width: 100%;
 }
 
+
+
+
+@media screen and (min-width: 768px) {
 ul {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(4, 1fr);
 grid-gap: 20px;
-}
+}}
+
+
+@media screen and (max-width: 768px) {
+  ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  }}
+  
+
 
 li {
 list-style-type: none;
