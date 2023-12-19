@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mooli&family=Silkscreen&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-image: linear-gradient(to right, #826fc8, #fbc2eb);
+            position: relative;
+        }
+
+        .contact_info {
+            position: absolute;
+            bottom: 20px;
+            font-size: 20px;
+            font-family: 'Luckiest Guy', cursive;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Silkscreen', sans-serif;
+            color: white;
+        }
+
+        .return_button {
+            position: absolute;
+            bottom: 60px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #826fc8;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Luckiest Guy', cursive;
+            font-family: 'Mooli', sans-serif;
+            font-family: 'Silkscreen', sans-serif;
+        }
+
+        .shell {
+            display: grid;
+            grid-template-columns: repeat(7, 70px);
+            grid-template-rows: repeat(7, 70px);
+            grid-gap: 1.5rem;
+        }
+
+        .item {
+            position: relative;
+            background-color: rgb(40, 40, 40);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+            transition: transform 0.3s ease-out;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact_info">email: bl3004@columbia.edu</div>
+    <button class="return_button" onclick="goToDragImages()">Return</button>
+
+    <div class="shell" id="shell-container"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const shellContainer = document.getElementById('shell-container');
+
+            for (let i = 0; i < 21; i++) {
+                const item = document.createElement('div');
+                item.classList.add('item');
+
+                const img = document.createElement('img');
+                img.src = `./Image2/${i + 1}.jpg`;
+                img.alt = `Photo ${i + 1}`;
+
+                item.appendChild(img);
+                shellContainer.appendChild(item);
+            }
+
+            document.addEventListener('mousemove', e => {
+                const item = document.querySelectorAll(".item");
+
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                item.forEach(sqr => {
+                    const sqrX = sqr.offsetLeft;
+                    const sqrY = sqr.offsetTop;
+
+                    const diffX = mouseX - sqrX;
+                    const diffY = mouseY - sqrY;
+
+                    const radians = Math.atan2(diffY, diffX);
+
+                    const angle = radians * 180 / Math.PI;
+
+                    sqr.style.transform = `rotate(${angle}deg)`;
+                });
+            });
+        });
+
+        function goToDragImages() {
+            window.location.href = 'https://bl3004.github.io/bl3004/projects/Project-03/DragImages.html';
+        }
+    </script>
+</body>
+
+</html>
