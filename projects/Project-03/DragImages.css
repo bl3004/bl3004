@@ -34,10 +34,10 @@ body {
 
 
 .color-codes h1 {
-    position: absolute; /* 设置为绝对定位 */
+    position: absolute; 
     bottom: 0px; /* 调整底部距离 */
-    left: 50%; /* 设置水平居中 */
-    transform: translateX(-50%); /* 使元素在水平方向上居中 */
+    left: 50%; 
+    transform: translateX(-50%); 
     font-size: 16px;
     color: #826fc8;
     font-family: 'Luckiest Guy', cursive; 
@@ -161,7 +161,7 @@ background-image:linear-gradient(to right, #a18cd1, #fbc2eb);
 */
 
 .button:hover li{
-    height: 35px;
+    height: 30px;
     /* 往上弹出的背景盒子大小 */
     opacity: 1;
     transform: translateY(-101px);/* 往上弹出的距离 */
