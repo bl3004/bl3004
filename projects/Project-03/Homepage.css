@@ -83,7 +83,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -80px;
+    bottom: -60px;
     margin-bottom: 30px;
 }
 .button2 {
@@ -93,7 +93,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -100px;
+    bottom: -80px;
     margin-bottom: 10px;
 }
 
@@ -151,7 +151,7 @@ body {
 
 
 .shell_body {
-    transform: scale(.8);
+    transform: scale(.7);
     padding: 8px 0 120px 0;
     display: relative;
     width: 100%;
