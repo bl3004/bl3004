@@ -694,7 +694,13 @@ const games = [
         year: "2020s",
         description:"Open-world FPS, battling a dictator on the fictional island of Yara, featuring guerrilla warfare and chaotic exploration."
     },
-
+    {
+        image:
+        "./Image4/Psychonauts22021.jpg",
+        name: "Psychonauts 2",
+        year: "2020s",
+        description:"Quirky platformer with psychic powers, continuing the story of Razputin Aquato in a surreal and imaginative world."
+    },
 
 
 
