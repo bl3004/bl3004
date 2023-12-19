@@ -15,6 +15,8 @@
             padding: 0;
         }
 
+
+        @media screen and (min-width: 768px) {
         body {
             min-height: 100vh;
             display: flex;
@@ -23,7 +25,17 @@
             justify-content: flex-end;
             background-image: linear-gradient(to right, #826fc8, #fbc2eb);
             position: relative;
-        }
+        }}
+        @media screen and (max-width: 768px) {
+        body {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            background-image: linear-gradient(to right, #826fc8, #fbc2eb);
+            position: relative;
+        }}
 
 
 
@@ -90,10 +102,10 @@
         @media screen and (max-width: 768px) {
         .shell {
             display: grid;
-            grid-template-columns: repeat(3, 70px);
-            grid-template-rows: repeat(3, 70px);
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(3, 50px);
             grid-gap: 1.5rem;
-            margin-top: 50px;
+          
         }
         }
 
