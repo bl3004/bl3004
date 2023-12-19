@@ -25,9 +25,10 @@
             position: relative;
         }
 
+
         .contact_info {
             position: absolute;
-            bottom: 20px;
+            bottom: 150px; 
             font-size: 20px;
             font-family: 'Luckiest Guy', cursive;
             font-family: 'Mooli', sans-serif;
@@ -38,16 +39,17 @@
         .return_button {
             position: absolute;
             bottom: 60px;
-            padding: 10px 20px;
-            background-color: #fff;
+            padding: 6px 10px;
+            background-color: rgba(255, 255, 255, 0.5);
             color: #826fc8;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             font-size: 16px;
             font-family: 'Luckiest Guy', cursive;
             font-family: 'Mooli', sans-serif;
             font-family: 'Silkscreen', sans-serif;
+            z-index: 999; /* 保证按钮位于最上层 */
         }
 
         .shell {
@@ -55,7 +57,9 @@
             grid-template-columns: repeat(7, 70px);
             grid-template-rows: repeat(7, 70px);
             grid-gap: 1.5rem;
+            margin-top: 50px; /* 调整图片整体下移的距离 */
         }
+
 
         .item {
             position: relative;
