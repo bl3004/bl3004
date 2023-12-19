@@ -121,7 +121,7 @@ img {
   border: none;
   padding: 5px 10px;
   
-  margin: 4px 8px; /* 按钮之间的间距 */
+  margin: 3px 8px; /* 按钮之间的间距 */
   cursor: pointer;
   border-radius: 20px;
   font-size: 13px;
@@ -141,7 +141,7 @@ img {
   color: #9a7bc5;
   border: none;
   padding: 5px 10px; 
-  margin: 4px 8px;
+  margin: 3px 8px;
   cursor: pointer;
   border-radius: 20px;
   font-size: 13px;
