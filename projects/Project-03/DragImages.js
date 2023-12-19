@@ -1,7 +1,7 @@
 const target = document.querySelector(".shell");
-// 设置图片数量为20
+
 var imageCount = 50;
-// 存储已使用的图片名称 
+
 var usedImages = [];
 
 fetch(
