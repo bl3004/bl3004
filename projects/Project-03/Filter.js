@@ -360,7 +360,7 @@ const games = [
     },
     {
         image:
-        "./Image4/Max Payne2001.jpg",
+        "./Image4/MaxPayne2001.jpg",
         name: "Max Payne",
         year: "2000s",
         description:"Noir-inspired third-person shooter, featuring intense gunfights, a gripping narrative, and the iconic bullet time mechanic."
